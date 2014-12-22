@@ -16,7 +16,7 @@
   }
 }(this, function(_, Backbone) {
 
-  var Layout = Backbone.View.extend({
+  var LayoutView = Backbone.View.extend({
 
     initialize: function (options) {
       this.options = options || {};
@@ -47,5 +47,6 @@
 
   });
 
-  return Layout;
+  Backbone.LayoutView = LayoutView;
+  return LayoutView;
 }));
